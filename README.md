@@ -23,3 +23,7 @@ echo RmVaNUJ1V2hTcmdJeUJqbQ== | base64 --decode => **FeZ5BuWhSrgIyBjm**
 `Login Argo CD Ui with username and password => u: admin, p=FeZ5BuWhSrgIyBjm`
 
 kubectl apply -f application.yaml
+
+https://167.172.105.147:30046
+
+![image](https://user-images.githubusercontent.com/21373505/143919027-dfe38e23-28c4-4d3e-a1a3-2df2b45df501.png)
