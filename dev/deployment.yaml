@@ -29,6 +29,6 @@ spec:
       containers:
         - name: springapp
           image: mertcakmak2/hello-spring
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8085
