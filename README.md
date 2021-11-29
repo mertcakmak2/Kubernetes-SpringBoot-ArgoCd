@@ -12,4 +12,13 @@ kubectl create namespace argocd
 
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
-kubectl port-forward -n argocd svc/argocd-server 8080:443
+### **`Add NodePort to Argo Cd Service`**
+
+kubectl patch svc argocd-server -p '{"spec": {"type": "NodePort"}}' -n argocd
+
+kubectl get secret argocd-initial-admin-secret -n argocd -o yaml  => **password in yaml file: RmVaNUJ1V2hTcmdJeUJqbQ==**
+
+echo RmVaNUJ1V2hTcmdJeUJqbQ== | base64 --decode => **FeZ5BuWhSrgIyBjm**
+
+`Login Argo CD Ui with username and password => u: admin, p=FeZ5BuWhSrgIyBjm`
+

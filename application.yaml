@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoUrl: https://github.com/mertcakmak2/Kubernetes-SpringBoot.git
+    repoURL: https://github.com/mertcakmak2/Kubernetes-SpringBoot.git
     targetRevision: HEAD
     path: dev
   destination:
