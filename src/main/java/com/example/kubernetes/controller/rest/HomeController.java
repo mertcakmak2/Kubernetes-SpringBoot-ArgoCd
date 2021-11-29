@@ -10,7 +10,7 @@ public class HomeController {
 
     @GetMapping("/hello")
     public String sayHello(){
-        return "Hello from kubernetes";
+        return "Hello from kubernetes v2";
     }
 
 }
