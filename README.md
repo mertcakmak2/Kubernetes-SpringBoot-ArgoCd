@@ -20,7 +20,7 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml  => **password 
 
 echo RmVaNUJ1V2hTcmdJeUJqbQ== | base64 --decode => **FeZ5BuWhSrgIyBjm**
 
-`Login Argo CD Ui with username and password => u: admin, p=FeZ5BuWhSrgIyBjm`
+`Login Argo CD Ui with username and password => u: admin, p: FeZ5BuWhSrgIyBjm`
 
 kubectl apply -f application.yaml
 
