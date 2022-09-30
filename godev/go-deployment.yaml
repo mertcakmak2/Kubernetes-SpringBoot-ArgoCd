@@ -13,7 +13,8 @@ spec:
     spec:
       containers:
       - name: hello
-        image: mertcakmak2/go-distroless:latest
+        # image: mertcakmak2/go-distroless:latest
+        image: mertcakmak2/go-distroless:2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
