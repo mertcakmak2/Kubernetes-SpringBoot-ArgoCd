@@ -13,6 +13,14 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: springapp
+  
+  source:
+    repoURL: https://github.com/mertcakmak2/Kubernetes-SpringBoot.git
+    targetRevision: HEAD
+    path: godev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: hello
 
   syncPolicy:
     syncOptions:
